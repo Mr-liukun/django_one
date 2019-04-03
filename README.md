@@ -1,0 +1,1 @@
+django的redis和mysql
