@@ -12,7 +12,7 @@ def mysql(request):
     return HttpResponse(json.dumps(re), content_type="application/json")
 
 def redis(request):
-    sr = StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)
+    sr = StrictRedis(host='172.17.0.3', port=6379, db=0, decode_responses=True)
 
     sr.set("name", "liukun")
     sr.set("id", "1")
