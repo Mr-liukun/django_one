@@ -13,7 +13,7 @@ def mysql(request):
     #qqqqqqqqqqqqqqqqqqqqqqqq
 def redis(request):
     sr = StrictRedis(host='172.17.0.3', port=6379, db=0, decode_responses=True)
-
+    #sssssssssssss
     sr.set("name", "liukun")
     sr.set("id", "1")
     list1 = [sr.get("name"), sr.get("id")]
