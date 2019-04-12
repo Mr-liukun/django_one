@@ -10,7 +10,7 @@ def mysql(request):
     cu.execute("select id, name, score from student")
     re = cu.fetchall()
     return HttpResponse(json.dumps(re), content_type="application/json")
-
+    #qq
 def redis(request):
     sr = StrictRedis(host='172.17.0.3', port=6379, db=0, decode_responses=True)
 
